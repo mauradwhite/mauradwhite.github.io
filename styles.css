@@ -255,10 +255,6 @@ main a:hover { color: var(--accent1); }
   font-size: 14px;
   color: var(--muted);
 }
-.cv-links {
-  margin-top: 10px;
-  white-space: nowrap;
-}
 
 /* Responsive: collapse sidebar to top on small screens */
 @media (max-width: 860px) {
