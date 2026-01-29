@@ -189,5 +189,21 @@ main a:hover { color: var(--accent1); }
 @media (max-width: 860px) {
   .layout { grid-template-columns: 1fr; }
   .sidebar { position: relative; height: auto; }
-  main { padding: 22px var(--gutter) 60px; }
+  main {
+  padding: 0 var(--gutter) 72px;
+}
+/* Hero / intro section (unlabeled about) */
+.hero {
+  background: rgba(12,45,34,0.05);
+  border-bottom: 2px solid rgba(12,45,34,0.15); /* brand color, subtle */
+  padding: 60px 0 48px;
+}
+
+.hero-text {
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.45;
+  max-width: 880px;
+  color: #0C2D22; /* brand color for emphasis */
 }
