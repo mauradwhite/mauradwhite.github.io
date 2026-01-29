@@ -192,21 +192,8 @@ main a:hover { color: var(--accent1); }
   main {
   padding: 0 var(--gutter) 72px;
 }
-/* Hero / intro section (unlabeled about) */
-.hero {
-  background: rgba(12, 45, 34, 0.08); /* light neutral green */
-  border-bottom: 2px solid rgba(12, 45, 34, 0.18);
-  padding: 64px 0 52px;
-}
-
-.hero-text {
-  font-family: var(--title-font);
-  font-weight: 500; /* bold version of current font */
-  font-size: 24px;
-  line-height: 1.4;
-  max-width: 900px;
-  color: #0C2D22; /* brand green */
-}
+.hero { background: hotpink !important; }
+.hero-text { font-weight: 900 !important; }
 
 /* Responsive: collapse sidebar to top on small screens */
 @media (max-width: 860px) {
