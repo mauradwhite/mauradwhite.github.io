@@ -184,19 +184,29 @@ main a:hover { color: var(--accent1); }
   font-size: 14px;
   margin-top: -6px;
 }
-/* Hero / intro section (unlabeled about) */
+/* Hero / intro section (full-bleed across main column) */
 .hero {
   background: rgba(12, 45, 34, 0.08); /* light neutral green */
-  border-bottom: 2px solid rgba(12, 45, 34, 0.18);
-  padding: 64px 0 52px;
+  border-bottom: 4px solid rgba(12, 45, 34, 0.22); /* slightly thicker */
+  padding: 28px 0 24px; /* a bit tighter */
+  margin-left: calc(-1 * var(--gutter));  /* removes left gap to meet sidebar */
+  margin-right: calc(-1 * var(--gutter)); /* removes right gap to hit page edge */
 }
 
+/* Keeps hero text aligned with the rest of your content */
+.hero-inner {
+  max-width: 980px; /* match your main max-width */
+  padding: 0 var(--gutter);
+}
+
+/* Hero text: smaller, bold Noto Sans */
 .hero-text {
-  font-family: var(--title-font);
-  font-weight: 500; /* bold version of current font */
-  font-size: 24px;
-  line-height: 1.4;
+  font-family: var(--body-font); /* Noto Sans */
+  font-weight: 700;             /* bold */
+  font-size: 18px;              /* smaller than before */
+  line-height: 1.45;
   max-width: 900px;
+  margin: 0;
   color: #0C2D22; /* brand green */
 }
 
