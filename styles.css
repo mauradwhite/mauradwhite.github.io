@@ -230,7 +230,7 @@ main a:hover { color: var(--accent1); }
     height: 600px;
     @media (max-width: 860px) {
   .cv-embed iframe {
-    width: 900px;   /* or 100% if you prefer */
+    width: 800px;   /* or 100% if you prefer */
     height: 700px;
   }
 }
