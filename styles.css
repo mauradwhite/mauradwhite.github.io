@@ -243,7 +243,7 @@ main a:hover { color: var(--accent1); }
 
 /* Control the visible page width */
 .cv-embed iframe {
-  width: 900px;   /* try 880–960 depending on your CV */
+  width: 960px;   /* try 880–960 depending on your CV */
   max-width: 100%;
   height: 1100px;
   border: 0;
