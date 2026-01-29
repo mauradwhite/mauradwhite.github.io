@@ -237,7 +237,7 @@ main a:hover { color: var(--accent1); }
   margin: 20px 0 12px;
   border: 1px solid rgba(62,70,68,0.2);
   border-radius: var(--radius);
-  overflow: hidden;
+  overflow: visible;
   background: white;
 }
 
