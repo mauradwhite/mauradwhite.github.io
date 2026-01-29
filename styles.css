@@ -232,23 +232,22 @@ main a:hover { color: var(--accent1); }
 }
 /* CV embed: make the container hug the doc width */
 .cv-embed {
-  width: fit-content;
-  max-width: 100%;
-  margin: 20px 0 12px;           /* left-aligned */
+  width: 100%;
+  height: 1100px;         /* adjust if needed */
+  margin: 20px 0 12px;
   border: 1px solid rgba(62,70,68,0.2);
   border-radius: var(--radius);
   overflow: hidden;
   background: white;
 }
 
-/* Control the visible page width */
 .cv-embed iframe {
-  width: 960px;   /* try 880–960 depending on your CV */
-  max-width: 100%;
-  height: 1100px;
+  width: 100%;
+  height: 100%;
   border: 0;
   display: block;
 }
+
 
 .cv-links {
   font-size: 14px;
