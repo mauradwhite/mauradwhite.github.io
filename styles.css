@@ -124,8 +124,9 @@ nav { margin-top: 10px; }
 
 /* Main content */
 main {
-  padding: 0;            /* hero will handle its own padding */
-  max-width: none;       /* IMPORTANT: allows full-width right column */
+  padding: 0;        /* hero + content handle their own padding */
+  max-width: none;   /* IMPORTANT: remove the 980px constraint */
+  width: 100%;       /* ensure it stretches across the grid column */
 }
 .section {
   padding: 28px 0;
@@ -185,15 +186,16 @@ main a:hover { color: var(--accent1); }
 }
 /* Hero / intro section (full-bleed across main column) */
 .hero {
+  width: 100%;
   background: rgba(12, 45, 34, 0.08);
   border-bottom: 4px solid rgba(12, 45, 34, 0.22);
   padding: 28px 0 24px;
-  margin: 0; /* clean */
+  margin: 0;
 }
 
-/* Keeps hero text aligned with the rest of your content */
 .hero-inner {
-  max-width: 980px; /* match your main max-width */
+  max-width: 980px;
+  margin: 0 auto;               /* centers within full-width bar */
   padding: 0 var(--gutter);
 }
 
@@ -209,7 +211,8 @@ main a:hover { color: var(--accent1); }
 }
 .content {
   max-width: 980px;
-  padding: 0 var(--gutter) 72px;
+  margin: 0 auto;                 /* centers the boxed content */
+  padding: 0 var(--gutter) 72px;  /* matches your spacing */
 }
 /* Responsive: collapse sidebar to top on small screens */
 @media (max-width: 860px) {
