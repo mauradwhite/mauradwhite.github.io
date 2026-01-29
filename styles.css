@@ -10,7 +10,7 @@
   --section-title: #097969; /* section titles outside sidebar */
   --cv-width: 980px;
   --cv-height: 1100px;
-  --cv-scale: 1.30;  /* try 1.15–1.35 */
+  --cv-scale: 1.35;  /* try 1.15–1.35 */
 
   /* Typography */
   --body-font: "Noto Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
