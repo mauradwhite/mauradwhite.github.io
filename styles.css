@@ -238,18 +238,18 @@ main a:hover { color: var(--accent1); }
 }
 /* CV embed: give Google a stable viewport width (prevents skinny reflow) */
 .cv-embed {
-  width: 100%;
-  margin: 20px 0 12px;
+  width: max-content;          /* shrink to iframe width */
+  max-width: 100%;
+  margin: 20px 0 12px;         /* LEFT aligned */
   border: 1px solid rgba(62,70,68,0.2);
   border-radius: var(--radius);
   background: white;
-  overflow-x: auto;     /* allows horizontal scroll if needed */
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 /* This width is the magic: it sets the embed "viewport" */
 .cv-embed iframe {
-  width: 980px;         /* try 940–1050 if needed */
+  width: 980px;                /* your tuned width */
   height: 1100px;
   border: 0;
   display: block;
