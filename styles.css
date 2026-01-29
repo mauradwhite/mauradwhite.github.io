@@ -1,3 +1,5 @@
+--content-offset: 24px; /* nudges content right to balance wider sidebar */
+
 :root{
   /* Palette */
   --bg: #ECEEE9;
@@ -206,7 +208,7 @@ main a:hover { color: var(--accent1); }
 
 .hero-inner {
   max-width: 980px;
-  margin-left: 0;        /* anchor hero text left */
+  margin-left: var(--content-offset);  /* match content alignment */
   margin-right: auto;
   padding: 0 var(--gutter);
 }
@@ -223,8 +225,8 @@ main a:hover { color: var(--accent1); }
 }
 .content {
   max-width: 980px;
-  margin-left: 0;               /* anchor content to the left */
-  margin-right: auto;           /* extra space stays on the right */
+  margin-left: var(--content-offset);  /* nudges right */
+  margin-right: auto;
   padding: 0 var(--gutter) 72px;
 }
 /* Responsive: collapse sidebar to top on small screens */
