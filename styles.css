@@ -8,6 +8,9 @@
   --text: #000000;       /* primary text */
   --sidebar-title: #fdebd0; /* sidebar heading/title font color */
   --section-title: #097969; /* section titles outside sidebar */
+  --cv-width: 980px;
+  --cv-height: 1100px;
+  --cv-scale: 1.25;  /* try 1.15–1.35 */
 
   /* Typography */
   --body-font: "Noto Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -221,29 +224,31 @@ main a:hover { color: var(--accent1); }
   margin-right: auto;
   padding: 0 var(--gutter) 72px;
 }
-/* CV embed: container just positions things (no border here) */
 .cv-embed {
   margin: 20px 0 12px;
-  overflow-x: auto;      /* ok on smaller screens */
+  overflow-x: auto; /* in case it overflows on smaller screens */
 }
 
-/* Border hugs exactly the iframe width */
+/* Border hugs the *scaled* content */
 .cv-frame {
-  width: max-content;    /* shrink-wrap */
-  max-width: 100%;
+  width: calc(var(--cv-width) * var(--cv-scale));
+  height: calc(var(--cv-height) * var(--cv-scale));
   border: 1px solid rgba(62,70,68,0.2);
   border-radius: var(--radius);
   background: #fff;
   overflow: hidden;
 }
 
-/* Fixed viewport so Google doesn't reflow into skinny column */
+/* Base size + scale up */
 .cv-frame iframe {
-  width: 980px;          /* tune 940–1050 if needed */
-  height: 1100px;
+  width: var(--cv-width);
+  height: var(--cv-height);
   border: 0;
   display: block;
+  transform: scale(var(--cv-scale));
+  transform-origin: top left;
 }
+
 
 
 .cv-links {
