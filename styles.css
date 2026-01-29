@@ -18,7 +18,7 @@
 
   /* Scale */
   --body-size: 16px;
-  --section-title-scale: 3;    /* 3x body */
+  --section-title-scale: 2.5;    /* 3x body */
   --subsection-title-scale: 2; /* 2x body */
 
   /* Layout */
@@ -211,12 +211,12 @@ main a:hover { color: var(--accent1); }
 /* Hero text: smaller, bold Noto Sans */
 .hero-text {
   font-family: var(--body-font); /* Noto Sans */
-  font-weight: 700;             /* bold */
-  font-size: 18px;              /* smaller than before */
-  line-height: 1.45;
+  font-weight: 400;              /* regular, not bold */
+  font-size: 18px;
+  line-height: 1.5;              /* optional: slightly airier */
   max-width: 900px;
   margin: 0;
-  color: #0C2D22; /* brand green */
+  color: #0C2D22;
 }
 .content {
   max-width: 980px;
