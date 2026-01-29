@@ -192,11 +192,11 @@ main a:hover { color: var(--accent1); }
 }
 /* Hero / intro section (full-bleed across main column) */
 .hero {
-  width: 100%;
+  width: 100vw;  /* span the entire browser width */
+  margin-left: calc(-1 * var(--sidebar-width)); /* pull it left to start at page edge */
   background: rgba(12, 45, 34, 0.08);
   border-bottom: 4px solid rgba(12, 45, 34, 0.22);
   padding: 28px 0 24px;
-  margin: 0;
 }
 
 .hero-inner {
