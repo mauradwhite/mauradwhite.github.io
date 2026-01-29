@@ -124,7 +124,7 @@ nav { margin-top: 10px; }
 
 /* Main content */
 main {
-  padding: 36px var(--gutter) 72px;
+  padding: 0 var(--gutter) 72px;
   max-width: 980px;
 }
 
@@ -199,11 +199,18 @@ main a:hover { color: var(--accent1); }
   padding: 64px 0 52px;
 }
 
-  .hero-text {
+.hero-text {
   font-family: var(--title-font);
   font-weight: 500; /* bold version of current font */
   font-size: 24px;
   line-height: 1.4;
   max-width: 900px;
   color: #0C2D22; /* brand green */
+}
+
+/* Responsive: collapse sidebar to top on small screens */
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { position: relative; height: auto; }
+  main { padding: 0 var(--gutter) 72px; }
 }
