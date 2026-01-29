@@ -228,27 +228,32 @@ main a:hover { color: var(--accent1); }
   main { padding: 0 var(--gutter) 72px; }
   .cv-embed {
     height: 600px;
+    @media (max-width: 860px) {
+  .cv-embed iframe {
+    width: 900px;   /* or 100% if you prefer */
+    height: 700px;
+  }
 }
 }
-/* CV embed: make the container hug the doc width */
+}
+/* CV embed: give Google a stable viewport width (prevents skinny reflow) */
 .cv-embed {
   width: 100%;
-  height: 1100px;         /* adjust if needed */
   margin: 20px 0 12px;
   border: 1px solid rgba(62,70,68,0.2);
   border-radius: var(--radius);
-  overflow: hidden;
   background: white;
+  overflow-x: auto;     /* allows horizontal scroll if needed */
+  overflow-y: hidden;
 }
 
+/* This width is the magic: it sets the embed "viewport" */
 .cv-embed iframe {
-  width: 100%;
-  height: 100%;
+  width: 980px;         /* try 940–1050 if needed */
+  height: 1100px;
   border: 0;
   display: block;
 }
-
-
 .cv-links {
   font-size: 14px;
   color: var(--muted);
