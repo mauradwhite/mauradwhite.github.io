@@ -221,40 +221,42 @@ main a:hover { color: var(--accent1); }
   margin-right: auto;
   padding: 0 var(--gutter) 72px;
 }
-/* Responsive: collapse sidebar to top on small screens */
-@media (max-width: 860px) {
-  .layout { grid-template-columns: 1fr; }
-  .sidebar { position: relative; height: auto; }
-  main { padding: 0 var(--gutter) 72px; }
-  .cv-embed {
-    height: 600px;
-    @media (max-width: 860px) {
-  .cv-embed iframe {
-    width: 800px;   /* or 100% if you prefer */
-    height: 700px;
-  }
-}
-}
-}
-/* CV embed: give Google a stable viewport width (prevents skinny reflow) */
+/* CV embed: stable viewport width so Google doesn't reflow into a skinny column */
 .cv-embed {
-  width: max-content;          /* shrink to iframe width */
+  width: max-content;          /* border hugs iframe width */
   max-width: 100%;
-  margin: 20px 0 12px;         /* LEFT aligned */
+  margin: 20px 0 12px;         /* left aligned */
   border: 1px solid rgba(62,70,68,0.2);
   border-radius: var(--radius);
   background: white;
   overflow: hidden;
 }
 
-/* This width is the magic: it sets the embed "viewport" */
 .cv-embed iframe {
-  width: 980px;                /* your tuned width */
+  width: 980px;                /* adjust 940–1050 if needed */
   height: 1100px;
   border: 0;
   display: block;
 }
+
 .cv-links {
   font-size: 14px;
   color: var(--muted);
+}
+
+/* Responsive: collapse sidebar to top on small screens */
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { position: relative; height: auto; }
+  main { padding: 0 var(--gutter) 72px; }
+
+  .cv-embed {
+    width: 100%;      /* avoid horizontal scroll on phones */
+    height: 650px;
+  }
+
+  .cv-embed iframe {
+    width: 100%;
+    height: 650px;
+  }
 }
