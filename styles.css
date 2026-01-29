@@ -204,7 +204,8 @@ main a:hover { color: var(--accent1); }
 
 .hero-inner {
   max-width: 980px;
-  margin: 0 auto;
+  margin-left: 0;        /* anchor hero text left */
+  margin-right: auto;
   padding: 0 var(--gutter);
 }
 
@@ -220,8 +221,9 @@ main a:hover { color: var(--accent1); }
 }
 .content {
   max-width: 980px;
-  margin: 0 auto;                 /* centers the boxed content */
-  padding: 0 var(--gutter) 72px;  /* matches your spacing */
+  margin-left: 0;               /* anchor content to the left */
+  margin-right: auto;           /* extra space stays on the right */
+  padding: 0 var(--gutter) 72px;
 }
 /* Responsive: collapse sidebar to top on small screens */
 @media (max-width: 860px) {
