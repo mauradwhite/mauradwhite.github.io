@@ -36,7 +36,9 @@ body {
   font-size: var(--body-size);
   line-height: 1.65;
 }
-
+body {
+  background: #ECEEE9;
+}
 /* Layout */
 .layout {
   display: grid;
