@@ -1,0 +1,189 @@
+:root{
+  /* Palette */
+  --bg: #ECEEE9;
+  --muted: #777B7A;
+  --brand: #0C2D22;      /* primary brand */
+  --accent1: #685F59;
+  --accent2: #3E4644;
+  --text: #000000;       /* primary text */
+  --sidebar-title: #fdebd0; /* sidebar heading/title font color */
+  --section-title: #097969; /* section titles outside sidebar */
+
+  /* Typography */
+  --body-font: "Noto Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --title-font: "Noto Serif", Georgia, "Times New Roman", serif;
+
+  /* Scale */
+  --body-size: 16px;
+  --section-title-scale: 3;    /* 3x body */
+  --subsection-title-scale: 2; /* 2x body */
+
+  /* Layout */
+  --sidebar-width: 280px;
+  --gutter: 28px;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body-font);
+  font-weight: 300; /* Noto Sans Light 300 */
+  font-size: var(--body-size);
+  line-height: 1.65;
+}
+
+/* Layout */
+.layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background: var(--brand);
+  padding: 26px 18px;
+  border-right: 1px solid rgba(236,238,233,0.2);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0 18px;
+  border-bottom: 1px solid rgba(236,238,233,0.18);
+  margin-bottom: 16px;
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(236,238,233,0.55);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+.profile .name {
+  font-family: var(--title-font);
+  font-weight: 500; /* Noto Serif Medium 500 */
+  color: var(--sidebar-title);
+  letter-spacing: 0.12em;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+nav { margin-top: 10px; }
+
+.navlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.navlist a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: var(--title-font);
+  font-weight: 500; /* Noto Serif Medium 500 */
+  color: rgba(253,235,208,0.72); /* sidebar title color, dimmed */
+  transition: all 160ms ease;
+  border-left: 3px solid transparent;
+}
+
+.navlist a:hover {
+  color: rgba(253,235,208,0.95);
+  background: rgba(236,238,233,0.10);
+}
+
+.navlist a.active {
+  color: var(--sidebar-title);
+  background: rgba(236,238,233,0.14);
+  border-left-color: var(--sidebar-title);
+  box-shadow: inset 0 0 0 1px rgba(236,238,233,0.12);
+}
+
+/* Main content */
+main {
+  padding: 36px var(--gutter) 72px;
+  max-width: 980px;
+}
+
+.section {
+  padding: 28px 0;
+  scroll-margin-top: 20px;
+}
+
+/* Section titles (outside sidebar) */
+.section-title {
+  font-family: var(--title-font);
+  font-weight: 500; /* Noto Serif Medium 500 */
+  color: var(--section-title);
+  font-size: calc(var(--body-size) * var(--section-title-scale));
+  line-height: 1.1;
+  margin: 0 0 18px 0;
+  letter-spacing: -0.01em;
+}
+
+/* Subsection titles (not in sidebar) */
+.subsection-title {
+  font-family: var(--title-font);
+  font-weight: 400; /* requested weight 400 */
+  color: var(--accent2);
+  font-size: calc(var(--body-size) * var(--subsection-title-scale));
+  line-height: 1.2;
+  margin: 22px 0 10px;
+}
+
+/* Body text */
+p, li, span, div {
+  color: var(--text);
+  font-weight: 300;
+}
+
+/* Links in content */
+main a {
+  color: var(--brand);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+main a:hover { color: var(--accent1); }
+
+/* Cards */
+.card {
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(62,70,68,0.14);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin: 14px 0;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.06);
+}
+
+.meta {
+  color: var(--muted);
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: -6px;
+}
+
+/* Responsive: collapse sidebar to top on small screens */
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { position: relative; height: auto; }
+  main { padding: 22px var(--gutter) 60px; }
+}

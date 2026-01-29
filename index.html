@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maura White</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Noto Serif: 400, 500; Noto Sans: 300, 400 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Noto+Serif:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="Headshot.JPEG" alt="Headshot of Maura White" />
+        <div class="name">MAURA WHITE</div>
+      </div>
+
+      <nav aria-label="Section navigation">
+        <ul class="navlist">
+          <!-- Sidebar section titles -->
+          <li><a href="#home" data-nav="home" class="active">Home</a></li>
+          <li><a href="#research" data-nav="research">Research</a></li>
+          <li><a href="#projects" data-nav="projects">Projects</a></li>
+          <li><a href="#publications" data-nav="publications">Publications</a></li>
+          <li><a href="#talks" data-nav="talks">Talks</a></li>
+          <li><a href="#teaching" data-nav="teaching">Teaching</a></li>
+          <li><a href="#cv" data-nav="cv">CV</a></li>
+          <li><a href="#contact" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <!-- Fully scroll-through sections -->
+      <section id="home" class="section" data-section>
+        <h1 class="section-title">Home</h1>
+        <p>
+          Add a short positioning statement here (2–3 sentences). You can add buttons to CV / email / Google Scholar.
+        </p>
+      </section>
+
+      <section id="research" class="section" data-section>
+        <h2 class="section-title">Research</h2>
+        <p>
+          Your research agenda summary. Keep it punchy and consistent with your CV.
+        </p>
+
+        <h3 class="subsection-title">Research themes</h3>
+        <div class="card">
+          <strong>Theme 1</strong>
+          <p class="meta">1-line description</p>
+          <p>2–4 lines on what you study, methods, and why it matters.</p>
+        </div>
+      </section>
+
+      <section id="projects" class="section" data-section>
+        <h2 class="section-title">Projects</h2>
+
+        <div class="card">
+          <strong>Project title</strong>
+          <p class="meta">Role · dates · collaborators</p>
+          <p>One-paragraph overview + 1–2 bullet outcomes.</p>
+        </div>
+
+        <h3 class="subsection-title">Selected artifacts</h3>
+        <ul>
+          <li><a href="#">Repo</a></li>
+          <li><a href="#">Slides</a></li>
+          <li><a href="#">Paper</a></li>
+        </ul>
+      </section>
+
+      <section id="publications" class="section" data-section>
+        <h2 class="section-title">Publications</h2>
+        <div class="card">
+          <strong>Publication / Chapter / Article</strong>
+          <p class="meta">Venue · year</p>
+          <p>Optional 1-line contribution note.</p>
+        </div>
+      </section>
+
+      <section id="talks" class="section" data-section>
+        <h2 class="section-title">Talks</h2>
+        <div class="card">
+          <strong>Talk title</strong>
+          <p class="meta">Conference · year</p>
+          <p><a href="#">Slides</a> · <a href="#">Abstract</a></p>
+        </div>
+      </section>
+
+      <section id="teaching" class="section" data-section>
+        <h2 class="section-title">Teaching</h2>
+        <h3 class="subsection-title">Selected roles</h3>
+        <ul>
+          <li>Role · institution · course</li>
+          <li>Role · institution · course</li>
+        </ul>
+      </section>
+
+      <section id="cv" class="section" data-section>
+        <h2 class="section-title">CV</h2>
+        <p>
+          Put your CV PDF in this repo (same folder as this file), then update the filename below.
+        </p>
+        <p><a href="MauraWhite_CV.pdf">Download CV (PDF)</a></p>
+      </section>
+
+      <section id="contact" class="section" data-section>
+        <h2 class="section-title">Contact</h2>
+        <p>Email: <a href="mailto:youremail@ucsd.edu">youremail@ucsd.edu</a></p>
+        <p>LinkedIn: <a href="#">link</a></p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
