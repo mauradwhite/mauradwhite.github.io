@@ -31,19 +31,15 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  background: var(--bg);
+  background: var(--bg);   /* #ECEEE9 */
   color: var(--text);
   font-family: var(--body-font);
   font-weight: 300; /* Noto Sans Light 300 */
   font-size: var(--body-size);
   line-height: 1.65;
-}
-body {
-  background: #ECEEE9;
-}
-body {
   overflow-x: hidden;
 }
+
 /* Layout */
 .layout {
   display: grid;
