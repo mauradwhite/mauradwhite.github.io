@@ -230,21 +230,24 @@ main a:hover { color: var(--accent1); }
     height: 600px;
 }
 }
-/* CV embed */
+/* CV embed: make the container hug the doc width */
 .cv-embed {
-  width: 100%;
-  height: 1100px; /* increase so top/header is visible */
-  margin: 20px 0 12px;
+  width: fit-content;
+  max-width: 100%;
+  margin: 20px 0 12px;           /* left-aligned */
   border: 1px solid rgba(62,70,68,0.2);
   border-radius: var(--radius);
-  overflow: visible;
+  overflow: hidden;
   background: white;
 }
 
+/* Control the visible page width */
 .cv-embed iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
+  width: 900px;   /* try 880–960 depending on your CV */
+  max-width: 100%;
+  height: 1100px;
+  border: 0;
+  display: block;
 }
 
 .cv-links {
