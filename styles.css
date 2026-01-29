@@ -44,8 +44,10 @@ body {
   display: grid;
   grid-template-columns: var(--sidebar-width) 1fr;
   min-height: 100vh;
-  max-width: 1400px;   /* controls overall page width */
-  margin: 0 auto;     /* centers the entire site */
+
+  max-width: 1360px;   /* controls overall page width */
+  margin-left: 0;      /* keep it anchored to left */
+  margin-right: auto;  /* any extra space goes on the right */
 }
 
 /* Sidebar */
