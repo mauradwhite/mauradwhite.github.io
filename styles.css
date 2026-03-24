@@ -38,23 +38,32 @@ body {
 }
 
 .hero {
-  padding: 5rem 0 3rem;
-  border-bottom: 1px solid #ddd6cc;
+  padding: 2.5rem 0 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero h1 {
-  font-family: "Noto Serif", serif;
-  font-size: 2.6rem;
-  line-height: 1.1;
-  margin: 0 0 1rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+}
+
+.hero-text,
+.hero p {
+  font-size: 1rem;
+  line-height: 1.65;
+  max-width: 700px;
+  margin: 0;
+  color: #444;
 }
 
 .eyebrow {
   font-size: 0.85rem;
-  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+  color: #666;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #7a6f63;
-  margin-bottom: 1rem;
 }
 
 .hero-text {
