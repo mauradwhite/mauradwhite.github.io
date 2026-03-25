@@ -92,289 +92,41 @@ p, li {
   color: var(--sidebar-title);
   text-align: center;
 }
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Maura White</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&family=Noto+Serif:wght@400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css?v=10" />
-</head>
-
-<body>
-  <div class="layout">
-    <aside class="sidebar">
-      <div class="profile">
-  <img src="Headshot.JPEG" alt="Headshot of Maura White" />
-  <div class="name">MAURA WHITE</div>
-<div class="profile-links">
-  <a href="mailto:m6white@ucsd.edu" aria-label="Email" class="icon-link">
-    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.5.16v.2l7.5 5.36 7.5-5.36v-.2a.25.25 0 0 0-.25-.25H4.75a.25.25 0 0 0-.25.25Zm15 2.04-7.06 5.04a.75.75 0 0 1-.88 0L4.5 8.95v8.3c0 .14.11.25.25.25h14.5a.25.25 0 0 0 .25-.25v-8.3Z"/>
-    </svg>
-  </a>
-
-  <a href="https://www.linkedin.com/in/maura-white-ed" target="_blank" rel="noopener" aria-label="LinkedIn" class="icon-link">
-    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M6.94 8.5H4V20h2.94V8.5ZM5.47 4A1.72 1.72 0 1 0 5.5 7.44 1.72 1.72 0 0 0 5.47 4Zm4.03 4.5V20h2.82v-5.68c0-1.5.28-2.95 2.14-2.95 1.84 0 1.87 1.72 1.87 3.05V20h2.83v-6.17c0-3.03-.65-5.36-4.19-5.36-1.7 0-2.84.93-3.31 1.82h-.04V8.5H9.5Z"/>
-    </svg>
-  </a>
-</div>
-</div>
-
-      <nav aria-label="Section navigation">
-        <ul class="navlist">
-          <li><a href="#research" data-nav="research">Research</a></li>
-          <li><a href="#collaborations" data-nav="collaborations">Collaborations</a></li>
-          <li><a href="#publications" data-nav="publications">Publications</a></li>
-          <li><a href="#talks" data-nav="talks">Recent Talks</a></li>
-          <li><a href="#teaching" data-nav="teaching">Teaching</a></li>
-          <li><a href="#cv" data-nav="cv">CV</a></li>
-        </ul>
-      </nav>
-    </aside>
-
-    <main>
-      <section id="intro" class="hero">
-        <div class="hero-inner">
-          <p class="eyebrow">Maura White · PhD Student in Education Studies · UC San Diego</p>
-          <h1>Studying how AI reshapes learning, identity, and equity</h1>
-          <p class="hero-text">
-            I research how generative AI is reshaping the social and collaborative dimensions of learning in K–12 and higher education, with particular attention to agency, identity, and equity. My work examines how learners and educators interpret and negotiate AI in instructional contexts across writing, human–AI interaction, and school policy.
-          </p>
-        </div>
-      </section>
-
-      <div class="content">
-
-        <section id="research" class="section" data-section>
-          <h2 class="section-title">Research</h2>
-
-          <div class="research-grid">
-            <div class="card">
-              <strong>AI-Supported Writing &amp; Learning</strong>
-              <p>
-                I study how students engage with AI as a collaborator in writing and learning processes, including how they position AI as a peer, tutor, or thinking partner in classroom contexts.
-              </p>
-            </div>
-
-            <div class="card">
-              <strong>AI Policy &amp; Educational Systems</strong>
-              <p>
-                I examine how schools and districts are developing policies to govern AI use, with attention to how these policies shape access, practice, and equity across educational systems.
-              </p>
-            </div>
-
-            <div class="card">
-              <strong>Social &amp; Identity Dimensions of AI Use</strong>
-              <p>
-                I investigate how students’ identities, social norms, and moral reasoning shape how they interpret, negotiate, and use AI in learning environments.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section id="collaborations" class="section" data-section>
-  <h2 class="section-title">Featured Collaborations</h2>
-
-  <div class="collab-grid">
-    <div class="collab-card card">
-      <div class="collab-content">
-        <strong>Digital Learning Lab</strong>
-        <p class="meta">UC Irvine School of Education</p>
-        <p>
-          Through the Papyrus AI team, I contribute to research on AI-supported writing, feedback, and classroom interaction, with a focus on how students and instructors engage with generative AI in authentic learning contexts.
-        </p>
-        <p><a href="PASTE-DLL-URL-HERE" target="_blank" rel="noopener">Visit site</a></p>
-      </div>
-      <div class="collab-preview">
-        <div class="collab-preview-placeholder">DLL website preview</div>
-      </div>
-    </div>
-
-    <div class="collab-card card">
-      <div class="collab-content">
-        <strong>AI for California</strong>
-        <p class="meta">Professional learning and outreach</p>
-        <p>
-          I support educator-facing AI literacy work through lesson development, presentations, and statewide professional learning initiatives focused on meaningful and equitable AI integration in schools.
-        </p>
-        <p><a href="PASTE-AI4CA-URL-HERE" target="_blank" rel="noopener">Visit site</a></p>
-      </div>
-      <div class="collab-preview">
-        <div class="collab-preview-placeholder">AI4CA website preview</div>
-      </div>
-    </div>
-
-    <div class="collab-card card">
-      <div class="collab-content">
-        <strong>Vocareum</strong>
-        <p class="meta">AI Math Tutor project</p>
-        <p>
-          As part of an AI-mediated math tutoring project, I help analyze student interaction and performance data to evaluate the tutor and translate findings into recommendations for instructional and system design improvements.
-        </p>
-        <p><a href="PASTE-VOCAREUM-URL-HERE" target="_blank" rel="noopener">Visit site</a></p>
-      </div>
-      <div class="collab-preview">
-        <div class="collab-preview-placeholder">Vocareum website preview</div>
-      </div>
-    </div>
-  </div>
-</section>
-        
-        <section id="publications" class="section" data-section>
-          <h2 class="section-title">Publications</h2>
-
-          <div class="card">
-            <strong>Published &amp; In Press</strong>
-            <ul>
-              <li>
-                White, M., Eguchi, A., &amp; Warschauer, M. (in press).
-                <em>The digital divide: Manifestations, proposed solutions, and future implications in the age of AI</em>.
-                In <em>Handbook of Theory and Research in Digital Media and Education</em>. Springer.
-              </li>
-              <li>
-                White, M. (in press).
-                <em>Diverse digital and AI literacies: Essential understandings for integrating AI in school spaces</em>.
-                <em>AI Matters</em>.
-              </li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <strong>Manuscripts in Progress</strong>
-            <ul>
-              <li>
-                White, M., Saito-Stehberger, D., &amp; Warschauer, M.
-                <em>AI as a Supplementary Collaborator: Middle School Student Perspectives on AI and Teacher Feedback</em>.
-              </li>
-              <li>
-                White, M., Vu, V., &amp; Warschauer, M.
-                <em>Editor, Tutor, or Thinking Partner: How Students Position AI in the Writing Classroom</em>.
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="talks" class="section" data-section>
-          <h2 class="section-title">Recent Talks</h2>
-
-          <div class="talk-card card">
-            <div class="talk-content">
-              <strong>Rethinking writing support: AI as peer, editor, and partner in the undergraduate classroom</strong>
-              <p class="meta">AERA Annual Meeting · Accepted for April 2026</p>
-              <p>
-                Symposium presentation on how students position generative AI within writing processes and what those role designations reveal about agency, collaboration, and instructional design.
-              </p>
-            </div>
-            <div class="talk-preview">
-              <div class="talk-preview-placeholder">Slides preview</div>
-            </div>
-          </div>
-
-          <div class="talk-card card">
-            <div class="talk-content">
-              <strong>AI identity, morality, and decision making</strong>
-              <p class="meta">Invited talk · Heyman Lab, UC San Diego · January 2026</p>
-              <p>
-                Invited presentation on student identity formation, moral reasoning, and social norms surrounding AI use in learning contexts.
-              </p>
-            </div>
-            <div class="talk-preview">
-              <div class="talk-preview-placeholder">Slides preview</div>
-            </div>
-          </div>
-
-          <div class="talk-card card">
-            <div class="talk-content">
-              <strong>Diverse digital and AI literacies: Essential understandings for integrating AI in school spaces</strong>
-              <p class="meta">EAAI-25 · March 2025</p>
-              <p>
-                Presentation on the forms of digital and AI literacy educators need in order to support thoughtful, equitable AI integration in school settings.
-              </p>
-            </div>
-            <div class="talk-preview">
-              <div class="talk-preview-placeholder">Slides preview</div>
-            </div>
-          </div>
-        </section>
-
-        <section id="teaching" class="section" data-section>
-          <h2 class="section-title">Teaching</h2>
-
-          <div class="card">
-            <strong>Higher Education Teaching</strong>
-            <p>
-              Graduate Teaching Assistant at UC San Diego for courses including Adolescent Development and Education, Language, Culture, and Education, Social Organization and Education, and Urban Education.
-            </p>
-          </div>
-
-          <div class="card">
-            <strong>K–12 Teaching</strong>
-            <p>
-              Former secondary English teacher in Virginia and Maryland, with experience in curriculum design, standards-based grading, and data-informed instruction across middle and high school settings.
-            </p>
-          </div>
-        </section>
-
-        <section id="cv" class="section" data-section>
-          <h2 class="section-title">CV</h2>
-
-          <div class="cv-embed">
-            <div class="cv-frame">
-              <iframe
-                src="MauraWhite-CV03_23_2026.pdf"
-                title="Maura White CV"
-              ></iframe>
-            </div>
-          </div>
-
-          <p class="cv-links">
-            <a href="MauraWhite-CV03_23_2026.pdf" target="_blank" rel="noopener">Open CV</a>
-            ·
-            <a href="MauraWhite-CV03_23_2026.pdf" download>Download PDF</a>
-          </p>
-        </section>
-
-      </div>
-    </main>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
-.profile-links a {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-
+.profile-links {
+  margin-top: 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-link {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  border-radius: 50%;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-
-  background: rgba(255, 255, 255, 0.08);
-  color: white;
-
+  background: rgba(255, 255, 255, 0.14);
+  text-decoration: none;
+  line-height: 1;
   transition: background 0.15s ease, transform 0.15s ease;
 }
 
-.profile-links a svg {
-  width: 14px;
-  height: 14px;
-}
-
-.profile-links a:hover {
-  background: rgba(255, 255, 255, 0.22);
+.icon-link:hover {
+  background: rgba(255, 255, 255, 0.26);
   transform: translateY(-1px);
 }
-.profile-links a:first-child {
-  font-size: 0.9rem;
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.icon path {
+  fill: #ffffff;
 }
 
 .sidebar nav {
