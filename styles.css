@@ -375,6 +375,48 @@ main {
   .talk-preview img {
     height: 220px;
   }
+  .research-grid .card {
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(62, 70, 68, 0.06);
+  box-shadow: none;
+  padding: 16px 18px;
+}
+
+.research-grid .card strong {
+  font-size: 1.02rem;
+  font-family: var(--title-font);
+  font-weight: 500;
+  margin-bottom: 0.45rem;
+}
+
+.research-grid .card p {
+  margin-top: 0.35rem;
+  line-height: 1.55;
+}
+
+.talk-card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(62, 70, 68, 0.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  padding: 16px 18px;
+}
+
+.talk-card strong {
+  font-size: 1.02rem;
+  font-family: var(--body-font);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.talk-preview {
+  background: rgba(12, 45, 34, 0.03);
+  border: 1px solid rgba(62, 70, 68, 0.1);
+}
+
+.talk-preview-placeholder {
+  background: rgba(12, 45, 34, 0.05);
+  color: rgba(34, 34, 34, 0.55);
+}
   .sidebar {
     position: relative;
     height: auto;
