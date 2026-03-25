@@ -262,6 +262,54 @@ main {
   font-size: 0.875rem;
   margin: 0 0 0.4rem;
 }
+.talk-card {
+  display: grid;
+  grid-template-columns: 1.6fr 0.9fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.talk-content p {
+  margin-top: 0.5rem;
+}
+
+.talk-preview {
+  border: 1px solid rgba(62, 70, 68, 0.14);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  min-height: 180px;
+}
+
+.talk-preview-placeholder {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--title-font);
+  font-size: 0.95rem;
+  color: var(--muted);
+  background: rgba(12, 45, 34, 0.04);
+}
+
+.talk-preview iframe,
+.talk-preview img {
+  width: 100%;
+  height: 180px;
+  border: 0;
+  display: block;
+  object-fit: cover;
+}
+
+#publications .card ul {
+  margin: 0.6rem 0 0;
+  padding-left: 1.2rem;
+}
+
+#publications .card li + li {
+  margin-top: 0.8rem;
+}
 
 /* Lists inside content */
 .content ul {
@@ -323,7 +371,16 @@ main {
   .research-grid {
     grid-template-columns: 1fr;
   }
+  
+  .talk-card {
+    grid-template-columns: 1fr;
+  }
 
+  .talk-preview-placeholder,
+  .talk-preview iframe,
+  .talk-preview img {
+    height: 220px;
+  }
   .sidebar {
     position: relative;
     height: auto;
@@ -332,7 +389,7 @@ main {
 
  .profile img {
   width: 140px;
-  aspect-ratio: 1 / 1;
+  height: 140px;
 }
 
   .hero {
