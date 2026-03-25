@@ -373,7 +373,64 @@ p, li {
   font-size: 0.875rem;
   color: var(--muted);
 }
+/* ===== GLOBAL HOVER SYSTEM ===== */
 
+/* Base transition for all interactive elements */
+a,
+.button,
+.card,
+.talk-preview,
+.collab-preview,
+.cv-links a {
+  transition: transform 0.15s ease, 
+              box-shadow 0.15s ease, 
+              background 0.15s ease, 
+              color 0.15s ease, 
+              filter 0.15s ease;
+}
+
+/* Sidebar nav links */
+.navlist a:hover {
+  transform: translateY(-1px) translateX(2px);
+  color: #ffffff;
+}
+
+/* Cards (general lift effect) */
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+}
+
+/* Collaboration previews */
+.collab-preview:hover {
+  transform: translateY(-2px);
+  background: rgba(12, 45, 34, 0.06);
+}
+
+/* Talk slide previews */
+.talk-preview:hover {
+  transform: translateY(-2px);
+  background: rgba(12, 45, 34, 0.06);
+}
+
+/* CV links (bottom buttons) */
+.cv-links a:hover {
+  transform: translateY(-1px);
+  color: var(--accent1);
+}
+
+/* Inline links (subtle polish) */
+.content a:hover {
+  color: var(--accent1);
+  text-decoration: underline;
+}
+/* Only lift visual cards, not publication text blocks */
+.research-grid .card:hover,
+.talk-card:hover,
+.collab-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+}
 /* Responsive */
 @media (max-width: 860px) {
   .layout {
