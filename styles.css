@@ -92,33 +92,30 @@ p, li {
   color: var(--sidebar-title);
   text-align: center;
 }
-.profile-links {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
 .profile-links a {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
+
+  background: rgba(255, 255, 255, 0.08);
   color: white;
-  font-size: 0.8rem;
-  text-decoration: none;
-  transition: background 0.15s ease, transform 0.15s ease, opacity 0.15s ease;
+
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.profile-links a svg {
+  width: 14px;
+  height: 14px;
 }
 
 .profile-links a:hover {
   background: rgba(255, 255, 255, 0.22);
   transform: translateY(-1px);
-  color: white;
 }
-
 .profile-links a:first-child {
   font-size: 0.9rem;
 }
