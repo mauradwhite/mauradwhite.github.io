@@ -89,9 +89,10 @@ li {
 
 .profile img {
   width: 180px;
-  height: auto;
-  border-radius: 14px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
   object-fit: cover;
+  display: block;
   margin-bottom: 16px;
 }
 
@@ -337,7 +338,7 @@ main {
 
  .profile img {
   width: 140px;
-  height: 140px;
+  aspect-ratio: 1 / 1;
 }
 
   .hero {
