@@ -16,7 +16,7 @@
   --title-font: "Noto Serif", Georgia, "Times New Roman", serif;
 
   /* Layout */
-  --sidebar-width: 320px;
+  --sidebar-width: 260px;
   --gutter: 28px;
   --radius: 14px;
   --content-offset: 28px;
@@ -84,7 +84,8 @@ li {
 }
 
 .profile {
-  margin-bottom: 28px;
+  margin-bottom: 32px;
+  text-align: center;
 }
 
 .profile img {
@@ -93,7 +94,7 @@ li {
   border-radius: 50%;
   object-fit: cover;
   display: block;
-  margin-bottom: 16px;
+   margin: 0 auto 16px;
 }
 
 .name {
@@ -101,10 +102,14 @@ li {
   font-size: 1.35rem;
   letter-spacing: 0.05em;
   color: var(--sidebar-title);
+  text-align: center;
 }
 
 .sidebar nav {
   margin-top: 18px;
+}
+.sidebar nav {
+  text-align: left;
 }
 
 .navlist {
