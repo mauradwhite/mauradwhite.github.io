@@ -107,8 +107,6 @@ li {
 
 .sidebar nav {
   margin-top: 18px;
-}
-.sidebar nav {
   text-align: left;
 }
 
@@ -191,40 +189,6 @@ main {
   color: #444444;
 }
 
-.hero-links {
-  margin-top: 1rem;
-  display: flex;
-  gap: 0.65rem;
-  flex-wrap: wrap;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.6rem 0.9rem;
-  border-radius: 999px;
-  text-decoration: none;
-  background: var(--brand);
-  color: #ffffff;
-  font-size: 0.92rem;
-  border: 1px solid var(--brand);
-  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
-}
-
-.button:hover {
-  background: #154135;
-  color: #ffffff;
-}
-
-.button-secondary {
-  background: transparent;
-  color: var(--brand);
-  border: 1px solid #b9afa4;
-}
-
-.button-secondary:hover {
-  background: rgba(12, 45, 34, 0.06);
-  color: var(--brand);
-}
 
 /* Main content */
 .content {
@@ -246,7 +210,28 @@ main {
   line-height: 1.2;
   color: var(--section-title);
 }
+.section-intro {
+  max-width: 72ch;
+  margin: 0 0 1rem;
+  color: #444444;
+}
 
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.research-grid .card {
+  margin: 0;
+}
+
+.research-grid .card strong {
+  font-size: 1.05rem;
+  font-family: var(--title-font);
+  margin-bottom: 0.4rem;
+}
 .subsection-title {
   margin: 1.4rem 0 0.7rem;
   font-family: var(--title-font);
@@ -332,6 +317,10 @@ main {
 
 @media (max-width: 860px) {
   .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .research-grid {
     grid-template-columns: 1fr;
   }
 
